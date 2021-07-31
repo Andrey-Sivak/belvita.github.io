@@ -1,0 +1,279 @@
+.nav {
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 32px;
+
+  position: relative;
+
+  display: inline-block;
+
+  transition: all 0.2s ease;
+
+  color: $green;
+  // color: #fff;
+
+  &:hover,
+  &--active {
+    color: #fff;
+
+    .nav__link__bg {
+      opacity: 1;
+    }
+  }
+}
+
+.nav__link__bg {
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  z-index: 1;
+
+  display: block;
+  width: 100%;
+  height: 34px;
+  min-height: 34px;
+
+  transition: all 0.2s ease;
+  transform: translateY(-50%);
+
+  opacity: 0;
+
+  &--1 {
+    min-width: 164px;
+    width: 164px;
+  }
+
+  &--2 {
+    min-width: 175px;
+    width: 175px;
+  }
+
+  &--3 {
+    min-width: 148px;
+    width: 148px;
+  }
+
+  &--4 {
+    min-width: 148px;
+    width: 148px;
+  }
+
+  &--5 {
+    min-width: 180%;
+  }
+
+  &--6 {
+    min-width: 162px;
+    width: 162px;
+  }
+
+  &--7 {
+    min-width: 175px;
+    width: 175px;
+  }
+}
+
+.nav__link__text {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: $tablet) {
+  .nav {
+    width: 100%;
+
+    &--left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 6;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+      width: 100%;
+      height: 100vh;
+      padding-top: 46px;
+
+      transition: all 0.2s linear;
+      transform: translateX(-100%);
+      text-align: left;
+
+      background: #fff;
+
+      .nav__list {
+        flex-direction: column;
+      }
+
+      .nav__item {
+        margin-right: 0;
+        margin-bottom: 3.5vh;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .nav__link {
+        border-bottom: 2px solid transparent;
+
+        &--active {
+          border-color: $green;
+        }
+      }
+    }
+
+    &--right {
+      .nav__list {
+        justify-content: space-between;
+      }
+
+      .nav__item {
+        margin-right: 0;
+      }
+    }
+
+    &--active {
+      transform: translateX(0);
+    }
+  }
+
+  .nav__item {
+    &--lk {
+      order: 1;
+
+      height: 32px;
+
+      .nav__link {
+        line-height: 1;
+      }
+
+      .nav__link__text {
+        display: none;
+      }
+    }
+
+    &--registration {
+      order: 2;
+    }
+
+    &--burger {
+      order: 3;
+    }
+
+    &--cabinet {
+      .nav__link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .nav__link__icon {
+        width: 12px;
+        height: 14px;
+        margin-right: 7px;
+
+        background: url("../../images/dist/icons/person__small.svg") no-repeat
+          center;
+      }
+    }
+  }
+
+  .nav__link {
+    font-size: 20px;
+    line-height: 32px;
+
+    &:hover,
+    &--active {
+      color: $green;
+    }
+  }
+
+  .nav__link__img {
+    margin-right: 7px;
+  }
+
+  .nav__link__icon {
+    display: inline-block;
+
+    width: 25px;
+    height: 32px;
+
+    background: url("../../images/dist/icons/person.svg") no-repeat center;
+  }
+
+  .nav__link__bg {
+    display: none;
+  }
+
+  .nav__mobile__box {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    padding-bottom: 42px;
+
+    .nav__btn {
+      display: block;
+
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .nav {
+    &--left {
+      align-items: flex-start;
+      .nav__list {
+        align-items: flex-start;
+        padding-left: 56px;
+      }
+    }
+  }
+
+  .nav__mobile__box__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    display: inline-block;
+
+    height: 185px;
+    width: 100%;
+
+    background: url("../../images/dist/nav__box__bg.png") no-repeat center;
+    background-size: cover !important;
+  }
+}
+
+@media (max-width: $mobile-sm) {
+  .nav__btn {
+    font-size: 13px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

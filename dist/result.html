@@ -1,0 +1,941 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>
+		Главная
+	</title>
+	<meta name="description" content="Startup HTML">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/include/slick.css">
+	<link rel="stylesheet" href="css/include/select2.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="nav nav--left" id="nav">
+					<ul class="nav__list">
+						<li class="nav__item nav__item--cabinet no-xl md">
+							<a href="cabinet.html" class="nav__link">
+								<span class="nav__link__icon no-xl md"></span>
+								<span class="nav__link__text">
+									Личный кабинет
+								</span>
+								<img width="174" height="34" class="nav__link__bg nav__link__bg--7"
+									src="images/dist/nav__link__bg_7.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="index.html" class="nav__link nav__link--active">
+								<span class="nav__link__text">
+									Главная
+								</span>
+								<img width="164" height="34" class="nav__link__bg nav__link__bg--1"
+									src="images/dist/nav__link__bg_1.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="test.html" class="nav__link nav__link">
+								<span class="nav__link__text">
+									СОЖ-Тест
+								</span>
+								<img width="175" height="34" class="nav__link__bg nav__link__bg--2"
+									src="images/dist/nav__link__bg_2.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="product.html" class="nav__link">
+								<span class="nav__link__text">
+									О Продукте
+								</span>
+								<img width="148" height="34" class="nav__link__bg nav__link__bg--3"
+									src="images/dist/nav__link__bg_3.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="winners.html" class="nav__link">
+								<span class="nav__link__text">
+									Победители
+								</span>
+								<img width="148" height="34" class="nav__link__bg nav__link__bg--4"
+									src="images/dist/nav__link__bg_4.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">
+								<span class="nav__link__text">
+									Правила
+								</span>
+								<img width="164" height="34" class="nav__link__bg nav__link__bg--5" src="images/dist/nav__link__bg.svg"
+									alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="feedback.html" class="nav__link">
+								<span class="nav__link__text">
+									Обратная связь
+								</span>
+								<img width="162" height="34" class="nav__link__bg nav__link__bg--6"
+									src="images/dist/nav__link__bg_6.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+					</ul>
+
+					<div class="nav__mobile__box no-xl md">
+						<a href="#" class="nav__btn btn" data-popup="#registrationPopup">
+							зарегистрировать карту
+						</a>
+
+						<span class="nav__mobile__box__bg"></span>
+					</div>
+				</div>
+
+				<div class="nav nav--right">
+					<ul class="nav__list">
+						<li class="nav__item nav__item--burger no-xl md">
+							<button class="burger" id="burgerBtn" type="button">
+								<span class="burger__item">Menu</span>
+							</button>
+						</li>
+
+						<li class="nav__item nav__item--registration">
+							<a href="#" class="nav__btn btn" data-popup="#registrationPopup">
+								зарегистрировать карту
+							</a>
+						</li>
+
+						<li class="nav__item nav__item--lk">
+							<a href="cabinet.html" class="nav__link">
+								<span class="nav__link__icon no-xl md"></span>
+								<span class="nav__link__text">
+									Личный кабинет
+								</span>
+								<img width="175" height="34" class="nav__link__bg nav__link__bg--7"
+									src="images/dist/nav__link__bg_7.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<main class="main">
+
+  <div class="intro intro--result">
+    <div class="container">
+      <div class="intro__inner">
+        <div class="intro__content">
+          <a href="#" class="logo">
+            <span class="logo__item">
+              <img class="logo__belvita" width="158" height="149" src="images/logo.png" alt="belvita" loading="lazy">
+              <span class="logo__ellipse"></span>
+
+              <img class="logo__perecrestok" width="149" height="34" src="images/dist/perecrestok.svg" alt="perecrestok"
+                loading="lazy">
+            </span>
+
+          </a>
+
+          <div class="question">
+            <div class="question__inner result__inner">
+              <div class="question__intro">
+                <div class="question__intro__wrapper">
+                  <h3 class="question__intro__number">
+                    Ваша персональная СОЖ-карта:
+                  </h3>
+
+                  <h2 class="question__intro__text">
+                    Используйте новые возможности, чтобы вести Счастливый Образ Жизни вместе с belVita!
+                  </h2>
+                </div>
+
+
+                <div class="question__intro__bg"></div>
+              </div>
+
+              <div class="items">
+                <div class="items__inner">
+                  <div class="items__box">
+                    <div class="items__card">
+                      <div class="items__card__content">
+                        <h4 class="items__card__title">
+                          Флористика
+                        </h4>
+                        <div class="items__card__wrapper">
+                          <p class="items__card__text">
+                            Известный способ подкачать мускулатуру – собрать 1000 и 1 букет! Или пробежатьсяпо
+                            цветочному
+                            рынку в поисках тех самых рододендронов. Зато это такое счастье — приносить счастье другим.
+                          </p>
+
+                          <p class="items__card__text">
+                            А в перерывах между цветочными «тренировками» расслабьтесь и получите удовольствие вместе с
+                            <span class="text__accent">
+                              belVita фундук и мёд!
+                            </span>
+                          </p>
+                        </div>
+
+                      </div>
+
+                      <img class="items__card__img" width="273" height="328" src="images/dist/items/1.png" alt="img"
+                        loading="lazy">
+
+                      <img class="items__card__decore items__card__decore--1" width="102" height="169"
+                        src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                      <img class="items__card__decore items__card__decore--2" width="102" height="169"
+                        src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                      <img class="items__card__decore items__card__decore--3" width="40" height="45"
+                        src="images/dist/items/top_1.png" alt="img" loading="lazy">
+
+                      <img class="items__card__decore items__card__decore--4" width="73" height="88"
+                        src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+
+                      <img class="items__card__decore items__card__decore--5" width="111" height="186"
+                        src="images/dist/items/bot_1_2.png" alt="img" loading="lazy">
+
+                      <img class="items__card__decore items__card__decore--6 no-xl md" width="73" height="88"
+                        src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+                    </div>
+
+                    <div class="social__wrapper result__wrapper">
+                      <div class="social__title">
+                        Поделиться:
+                      </div>
+                      <div class="social social--inner">
+                        <a href="#" class="social__item social__item--vk" target="_blank">
+                          <span></span>
+                        </a>
+                        <a href="#" class="social__item social__item--ok" target="_blank">
+                          <span></span>
+                        </a>
+                        <a href="#" class="social__item social__item--mail" target="_blank">
+                          <span></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="items__box">
+                    <div class="items__card">
+                      <div class="items__card__content">
+                        <h4 class="items__card__title">
+                          Косметология
+                        </h4>
+                        <div class="items__card__wrapper">
+                          <p class="items__card__text">
+                            Когда на лице написано – счастливый человек, тогда и косметолог счастлив! Потому что он
+                            знает,
+                            чьих это рук дело. Здоровье снаружи и здоровье внутри – вот залог счастья.
+                          </p>
+
+                          <p class="items__card__text">
+                            Поэтому не забывайте о пользе злакови витаминов – попробуйте <span
+                              class="text__accent">belVita витаминизированное со злаковыми хлопьями,</span> и увидите
+                            улыбку на своем лице!
+                          </p>
+                        </div>
+
+                      </div>
+
+                      <img class="items__card__img items__card__img--2" width="361" height="349"
+                        src="images/dist/items/2.png" alt="img" loading="lazy">
+
+                      <img class="items__card__decore items__card__decore--1" width="102" height="169"
+                        src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                      <img class="items__card__decore items__card__decore--2" width="102" height="169"
+                        src="images/dist/items/top.png" alt="img" loading="lazy">
+
+
+                      <img class="items__card__decore items__card__decore--6" width="73" height="88"
+                        src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+
+                      <img class="items__card__decore items__card__decore--7" width="40" height="45"
+                        src="images/dist/items/top_1.png" alt="img" loading="lazy">
+                    </div>
+
+                    <div class="social__wrapper result__wrapper">
+                      <div class="social__title">
+                        Поделиться:
+                      </div>
+                      <div class="social social--inner">
+                        <a href="#" class="social__item social__item--vk" target="_blank">
+                          <span></span>
+                        </a>
+                        <a href="#" class="social__item social__item--ok" target="_blank">
+                          <span></span>
+                        </a>
+                        <a href="#" class="social__item social__item--mail" target="_blank">
+                          <span></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Остальные карточки -->
+                  <!-- <div class="items__card">
+                    <div class="items__card__content">
+                      <h4 class="items__card__title">
+                        Танцы
+                      </h4>
+                      <div class="items__card__wrapper">
+                        <p class="items__card__text">
+                          Танцы — это твоё! Можно зажигать и сжигать калории хоть каждый вечер. Выбирай танецпо вкусу и
+                          почувствуй счастье в теле и в душе.
+                        </p>
+
+                        <p class="items__card__text">
+                          А после зарядись <span class="text__accent">belVita в формате сэндвича с какао и йогуртовой
+                            начинкой</span> – ведь так приятно совмещать пользу и удовольствие!
+                        </p>
+                      </div>
+
+                    </div>
+
+                    <img class="items__card__img items__card__img--3" width="289" height="327"
+                      src="images/dist/items/3.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--1" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--2" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--3" width="40" height="45"
+                      src="images/dist/items/top_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--4" width="73" height="88"
+                      src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--5" width="111" height="186"
+                      src="images/dist/items/bot_1_2.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--6 no-xl md" width="73" height="88"
+                      src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+                  </div>
+
+                  <div class="items__card">
+                    <div class="items__card__content">
+                      <h4 class="items__card__title">
+                        Нутрициология
+                      </h4>
+                      <div class="items__card__wrapper">
+                        <p class="items__card__text">
+                          Твоё чутьё тебя не подводит! Мы — то, что мы едим. Здорово, когда можешь не только разобраться
+                          в своем питании, но и помочь другим вести счастливый образ жизни!
+                        </p>
+
+                        <p class="items__card__text">
+                          Попробуй <span class="text__accent">belVita из цельных злаков с мёдом и орехами</span> и смело
+                          рекомендуй полезный завтрак друзьям!
+                        </p>
+                      </div>
+
+                    </div>
+
+                    <img class="items__card__img" width="273" height="328" src="images/dist/items/1.png" alt="img"
+                      loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--1" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--2" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+
+                    <img class="items__card__decore items__card__decore--6" width="73" height="88"
+                      src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--7" width="40" height="45"
+                      src="images/dist/items/top_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--8 no-md" width="111" height="186"
+                      src="images/dist/items/bot_1_2.png" alt="img" loading="lazy">
+                  </div>
+
+                  <div class="items__card">
+                    <div class="items__card__content">
+                      <h4 class="items__card__title">
+                        Психология
+                      </h4>
+                      <div class="items__card__wrapper">
+                        <p class="items__card__text">
+                          Разобраться, что значит счастливый образ жизни — уже большая победа на пути к новому
+                          увлечению!
+                        </p>
+
+                        <p class="items__card__text">
+                          Например, научиться находить для себя маленькие радости каждый день и начинать утро с <span
+                            class="text__accent">belVita с добавлением какао</span>, чтобы зарядить мозги!
+                        </p>
+                      </div>
+
+                    </div>
+
+                    <img class="items__card__img items__card__img--4" width="315" height="323"
+                      src="images/dist/items/4.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--1" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--2" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--3 items__card__decore--3--top" width="40"
+                      height="45" src="images/dist/items/top_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--4" width="73" height="88"
+                      src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--5" width="111" height="186"
+                      src="images/dist/items/bot_1_2.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--6 no-xl md" width="73" height="88"
+                      src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+                  </div>
+
+                  <div class="items__card">
+                    <div class="items__card__content">
+                      <h4 class="items__card__title">
+                        Коучинг
+                      </h4>
+                      <div class="items__card__wrapper">
+                        <p class="items__card__text items__card__text--mb">
+                          В здоровом теле здоровый дух! Поэтому все коучи такие энергичные и заряжают всех вокруг своим
+                          позитивным настроем.
+                        </p>
+
+                        <p class="items__card__text">
+                          Попробуй сделать это с <span class="text__accent">belVita мультизлаковое</span> — зарядись
+                          энергией с удовольствием!
+                        </p>
+                      </div>
+
+                    </div>
+
+                    <img class="items__card__img items__card__img--2" width="361" height="349"
+                      src="images/dist/items/2.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--1" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--2" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+
+                    <img class="items__card__decore items__card__decore--6" width="73" height="88"
+                      src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--7" width="40" height="45"
+                      src="images/dist/items/top_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--8 no-md" width="111" height="186"
+                      src="images/dist/items/bot_1_2.png" alt="img" loading="lazy">
+                  </div>
+
+                  <div class="items__card">
+                    <div class="items__card__content">
+                      <h4 class="items__card__title">
+                        Бэккэмпинг
+                      </h4>
+                      <div class="items__card__wrapper">
+                        <p class="items__card__text">
+                          Ключ к счастливому образу жизни — это хорошее настроение! А каким оно еще должно быть, когда
+                          встречаешь рассвет на горном склоне, а на завтрак — <span class="text__accent">belVita сэндвич
+                            с йогуртовой начинкой</span>?!
+                        </p>
+
+                        <p class="items__card__text">
+                          Хватить просто мечтать — пора собирать рюкзак. И не забудь belVita!
+                        </p>
+                      </div>
+
+                    </div>
+
+                    <img class="items__card__img items__card__img--5" width="253" height="359"
+                      src="images/dist/items/5.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--1" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--2" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img
+                      class="items__card__decore items__card__decore--3 items__card__decore--3 items__card__decore--3--top5"
+                      width="40" height="45" src="images/dist/items/top_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--4" width="73" height="88"
+                      src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--5" width="111" height="186"
+                      src="images/dist/items/bot_1_2.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--6 items__card__decore--6--top5 no-xl md"
+                      width="73" height="88" src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+                  </div>
+
+                  <div class="items__card">
+                    <div class="items__card__content">
+                      <h4 class="items__card__title">
+                        Волонтёрство
+                      </h4>
+                      <div class="items__card__wrapper">
+                        <p class="items__card__text">
+                          Способность помогать другим — твой конёк! А кстати, знаешь, сколько лошадей ждут своих
+                          попечителей? Быть волонтёром — это счастье, которое всегда держит в тонусе. Поэтому, когда
+                          помогаешь питомцам, не забудь позаботиться о себе.
+                        </p>
+
+                        <p class="items__card__text">
+                          Попробуй <span class="text__accent">belVita Софт Бэйкс с какао начинкой</span> — добавь
+                          энергии и удовольствия для добрых дел!
+                        </p>
+                      </div>
+
+                    </div>
+
+                    <img class="items__card__img items__card__img--6" width="370" height="298"
+                      src="images/dist/items/6.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--1" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--2" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img
+                      class="items__card__decore items__card__decore--3 items__card__decore--3 items__card__decore--3--top5 no-xl md"
+                      width="40" height="45" src="images/dist/items/top_1.png" alt="img" loading="lazy">
+
+
+                    <img class="items__card__decore items__card__decore--6 items__card__decore--6--top6" width="73"
+                      height="88" src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+
+
+                    <img class="items__card__decore items__card__decore--9 no-md" width="111" height="186"
+                      src="images/dist/items/bot_1_2.png" alt="img" loading="lazy">
+                  </div>
+
+                  <div class="items__card">
+                    <div class="items__card__content">
+                      <h4 class="items__card__title">
+                        Блогинг
+                      </h4>
+                      <div class="items__card__wrapper">
+                        <p class="items__card__text">
+                          Чем бы ты ни занимался, если тебе есть чем поделиться — не держи в себе! Любая пробежка в
+                          парке, танцы на кухне или рецепты здорового завтрака — всё может стать классным контентом.
+                          Заряжай смартфон!
+                        </p>
+
+                        <p class="items__card__text">
+                          А перед этим зарядись сам с <span class="text__accent">belVita сэндвич с йогуртовой начинкой
+                          </span>– удовольствие и польза на целый день!
+                        </p>
+                      </div>
+
+                    </div>
+
+                    <img class="items__card__img items__card__img--5" width="253" height="359"
+                      src="images/dist/items/5.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--1" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--2" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--3 items__card__decore--3--top6" width="40"
+                      height="45" src="images/dist/items/top_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--6 items__card__decore--6--top7 no-xl md"
+                      width="73" height="88" src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--10" width="73" height="88"
+                      src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+                  </div>
+
+                  <div class="items__card">
+                    <div class="items__card__content">
+                      <h4 class="items__card__title">
+                        Фотография
+                      </h4>
+                      <div class="items__card__wrapper">
+                        <p class="items__card__text">
+                          Увидеть то, что не видят другие — большое искусство! Кажется, пора посмотреть на свои
+                          возможности для счастья — посещать новые места, знакомиться с новыми людьми, отмерять
+                          километры дорог и гигабайты фотографий.
+                        </p>
+
+                        <p class="items__card__text">
+                          А чтобы насыщенный день прошел в удовольствие, захвати с собой <span
+                            class="text__accent">belVita Софт Бэйкс с клубничной начинкой!</span>
+                        </p>
+                      </div>
+
+                    </div>
+
+                    <img class="items__card__img items__card__img--7" width="279" height="333"
+                      src="images/dist/items/7.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--1" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img class="items__card__decore items__card__decore--2" width="102" height="169"
+                      src="images/dist/items/top.png" alt="img" loading="lazy">
+
+                    <img
+                      class="items__card__decore items__card__decore--3 items__card__decore--3 items__card__decore--3--top5 no-xl md"
+                      width="40" height="45" src="images/dist/items/top_1.png" alt="img" loading="lazy">
+
+
+                    <img class="items__card__decore items__card__decore--6 items__card__decore--6--top6" width="73"
+                      height="88" src="images/dist/items/bot_1.png" alt="img" loading="lazy">
+
+
+                    <img class="items__card__decore items__card__decore--9 no-md" width="111" height="186"
+                      src="images/dist/items/bot_1_2.png" alt="img" loading="lazy">
+                  </div> -->
+
+
+                </div>
+              </div>
+
+              <div class="result__footer">
+                <a href="question.html" class="btn result__btn">
+                  пройти тест ещё раз
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer" id="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<p class="footer__description">
+				Период проведения акции в ТС Перекрёсток, включая выдачу призов - с 01 августа 2021 по 31 октября 2021 года.
+				Срок совершения покупок, регистрации карт клуба Перекрёсток,<br class="no-md">прохождения теста и получения
+				персональной
+				СОЖ-карты сайте belvita.life c 01 августа 2021 по 30 сентября 2021.<br class="no-md">
+				Организатор Акции ООО «Мон'дэлис Русь». Информацию об Организаторе Акции, о правилах ее проведения, количестве
+				призов по результатам акции, сроках и месте и порядке их получения можно
+				посмотреть на сайте
+				belvita.life.
+				Количество призов ограничено. Акция проводится на территории Российской Федерации и
+				распространяется только на
+				продукцию, купленную на территории<br class="no-md"> Российской Федерации. По условиям Клуба Перекрёсток 10
+				баллов = 1 рублю
+			</p>
+
+			<div class="footer__wrapper">
+				<div class="contacts">
+					<a href="tel:8-800-555-8000" class="contacts__phone">
+						8-800-555-8000
+					</a>
+					<a href="mailto:info@belvita.life" class="contacts__email">
+						info@belvita.life
+					</a>
+				</div>
+
+				<div class="footer__center">
+
+					<nav class="footer__nav">
+						<ul class="footer__nav__list">
+							<li class="footer__nav__item">
+								<a href="#" class="footer__nav__link">
+									Политика конфиденциальности
+								</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" class="footer__nav__link">
+									Правила акции
+								</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" class="footer__nav__link">
+									Пользовательское соглашение
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="footer__copyright">
+						<img class="footer__copyright__img" width="132" height="48" src="images/dist/mondelez.svg" alt="mondelez"
+							loading="lazy">
+						<p class="footer__copyright__text">
+							ООО «Мон’дэлис Русь». Часть группы компаний Mondelēz International. Все права защищены.
+						</p>
+					</div>
+				</div>
+
+				<div class="social">
+					<a href="#" class="social__item social__item--vk" target="_blank">
+						<span></span>
+					</a>
+					<a href="#" class="social__item social__item--youtube" target="_blank">
+						<span></span>
+					</a>
+					<a href="#" class="social__item social__item--instagram" target="_blank">
+						<span></span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<picture decoding="async">
+		<source srcset="images/dist/footer__bg--mobile.svg" media="(max-width: 767px)">
+		<img class="footer__bg" src="images/dist/footer__bg.svg" alt="footer__bg" loading="lazy">
+	</picture>
+
+</footer>
+
+<div class="popups">
+	<div id="registrationPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Регистрация</div>
+				<form class="popup__form" novalidate="novalidate" id="registrationForm">
+					<div class="form__item">
+						<input name="fio" id="fio" type="text" class="form__input" placeholder="Ф.И.О." required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="email_2" id="email_2" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="phone_2" id="phone_2" type="tel" class="form__input" placeholder="Мобильный телефон">
+						<span class="form__item__description">
+							Необязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="card_number" id="card_number" type="text" class="form__input"
+							placeholder="Номер карты Клуба Перекрёсток" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="rules_aktition" name="rules_aktition" required checked>
+						<label for="rules_aktition" class="custom__checkbox__label">Я согласен с Правилами Акции</label>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="personal_data" name="personal_data" required checked>
+						<label for="personal_data" class="custom__checkbox__label">
+							<span>
+								Я даю свое <a href="#" class="form__item__link">согласие</a> на обработку моих
+								персональных данных в соответствии с Правилами акции и <a href="#" class="form__item__link">Положением
+									об
+									организации обработки ПД в ООО
+									«Мон’дэлис Русь».</a>
+							</span>
+						</label>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="mailing" name="mailing">
+						<label for="mailing" class="custom__checkbox__label">Я согласен получать рассылки по акциям Mondelez</label>
+					</div>
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<a href="#" class="form__link" data-popup="#authPopup">
+								Авторизация
+							</a>
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="authPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Авторизация</div>
+				<form class="popup__form" novalidate="novalidate">
+
+					<div class="form__item">
+						<input name="email_3" id="email_3" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="password" id="password" type="password" class="form__input" placeholder="Пароль" required>
+						<span class="form__item__error form__item__error--special">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item form__item--error">
+						Неверный логин или пароль
+					</div>
+
+					<div class="form__item form__item--link">
+						<a href="#" class="form__link" data-popup="#passwordPopup">
+							Забыли пароль?
+						</a>
+					</div>
+
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<div class="form__box__text">
+								Если вы в первый раз на сайте —<br> <a href="#" class="form__link"
+									data-popup="#registrationPopup">зарегистрируйтесь
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="passwordPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Сброс пароля</div>
+				<p class="popup__subtitle">
+					Введите свой Email для восстановления пароля
+				</p>
+				<form class="popup__form" novalidate="novalidate">
+
+					<div class="form__item">
+						<input name="email_5" id="email_5" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<div class="form__box__text">
+								Если вы в первый раз на сайте —<br> <a href="#" class="form__link"
+									data-popup="#registrationPopup">зарегистрируйтесь
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="successfulRegistration" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Регистрация <br>пройдена</div>
+
+				<div class="popup__content">
+					<p class="popup__content__text">
+						Пароль для входа на сайт<br> отправлен на e-mail, указанный<br> при регистрации.
+					</p>
+
+					<button class="btn popup__btn popup__close__btn">закрыть</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/include/jquery.min.js"></script>
+<script src="js/include/jquery.maskedinput.min.js"></script>
+<script src="js/include/jquery.validate.min.js"></script>
+<script src="js/include/slick.min.js"></script>
+<script src="js/include/select2.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
