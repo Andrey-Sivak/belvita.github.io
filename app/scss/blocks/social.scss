@@ -38,6 +38,13 @@
             center;
         }
       }
+
+      &--download {
+        span {
+          background: url("../../images/dist/download__inner.svg") no-repeat
+          center;
+        }
+      }
     }
   }
 }

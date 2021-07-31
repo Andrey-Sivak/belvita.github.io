@@ -17,6 +17,70 @@
   margin-bottom: 190px;
 }
 
+.intro--result {
+
+  & .items__inner {
+    position: relative;
+    margin-bottom: 80px;
+
+    & .wood-bg {
+      z-index: -1;
+      position: absolute;
+      width: 1350px;
+      top: -13px;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url('../../images/dist/wood-bg.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @media(max-width: $mobile) {
+        background-size: cover;
+      }
+    }
+  }
+
+  & .items__box {
+    position: relative;
+    margin-bottom: 0;
+
+    @media(max-width: $mobile) {
+      margin-bottom: 36px;
+    }
+
+    & img {
+      display: block;
+      max-width: 520px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    & .social__wrapper {
+      position: absolute;
+      flex-direction: row;
+      align-items: flex-end;
+      right: 80px;
+      bottom: -13px;
+
+      @media(max-width: $mobile) {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      & .social__title {
+        margin-right: 9px;
+
+        @media(max-width: $mobile) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
 .items__card {
   position: relative;
 

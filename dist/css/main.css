@@ -914,6 +914,15 @@ body {
   display: block;
 }
 
+.faq__item--active .faq__text a {
+  color: #155b11;
+  text-decoration: underline;
+}
+
+.faq__item--active .faq__text .bold {
+  font-weight: 600;
+}
+
 .faq__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1806,6 +1815,56 @@ span.error {
   max-width: 562px;
   width: 100%;
   margin-bottom: 190px;
+}
+
+.intro--result .items__inner {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.intro--result .items__inner .wood-bg {
+  z-index: -1;
+  position: absolute;
+  width: 1350px;
+  top: -13px;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url("../../images/dist/wood-bg.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro--result .items__box {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.intro--result .items__box img {
+  display: block;
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro--result .items__box .social__wrapper {
+  position: absolute;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  right: 80px;
+  bottom: -13px;
+}
+
+.intro--result .items__box .social__wrapper .social__title {
+  margin-right: 9px;
 }
 
 .items__card {
@@ -2730,6 +2789,10 @@ b {
 
 .social--inner .social__item--mail span {
   background: url("../../images/dist/social/mail__inner.svg") no-repeat center;
+}
+
+.social--inner .social__item--download span {
+  background: url("../../images/dist/download__inner.svg") no-repeat center;
 }
 
 .social__item {
@@ -4106,6 +4169,10 @@ b {
     text-align: center;
   }
 
+  .video__video {
+    height: 60vw;
+  }
+
   .footer__nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4349,6 +4416,29 @@ b {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     border-radius: 30px;
+  }
+
+  .intro--result .items__inner .wood-bg {
+    background-size: cover;
+  }
+
+  .intro--result .items__box {
+    margin-bottom: 36px;
+  }
+
+  .intro--result .items__box .social__wrapper {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .intro--result .items__box .social__wrapper .social__title {
+    margin-right: 0;
   }
 
   .mistake__title {
@@ -4680,6 +4770,7 @@ b {
 .select2-selection__arrow
 b{background:url(../../images/dist/icons/form__select__arrow.svg) center no-repeat}
 .intro__test__description__bg{background:url("../../images/dist/intro/test__description.webp") no-repeat center}
+.intro--result .items__inner .wood-bg{background-image:url("../../images/dist/wood-bg.webp")}
 .pass__bg{background:url("../../images/dist/pass/bg.webp") no-repeat center}
 .question__intro__bg{background:url("../../images/dist/question/intro__bg.webp") no-repeat center}
 .select2-container--default
@@ -4690,6 +4781,7 @@ b{background:url(../../images/dist/icons/select__arrow.svg) center no-repeat}
 .social--inner .social__item--fa span{background:url("../../images/dist/social/fa__inner.svg") no-repeat center}
 .social--inner .social__item--ok span{background:url("../../images/dist/social/ok__inner.svg") no-repeat center}
 .social--inner .social__item--mail span{background:url("../../images/dist/social/mail__inner.svg") no-repeat center}
+.social--inner .social__item--download span{background:url("../../images/dist/download__inner.svg") no-repeat center}
 .social__item--vk span{background:url("../../images/dist/social/vk.svg") no-repeat center}
 .social__item--youtube span{background:url("../../images/dist/social/youtube.svg") no-repeat center}
 .social__item--instagram span{background:url("../../images/dist/social/inst.svg") no-repeat center}

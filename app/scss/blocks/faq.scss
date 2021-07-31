@@ -12,6 +12,15 @@
 
     .faq__text {
       display: block;
+
+      & a {
+        color: $green;
+        text-decoration: underline;
+      }
+
+      & .bold {
+        font-weight: 600;
+      }
     }
   }
 }

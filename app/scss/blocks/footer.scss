@@ -16,6 +16,12 @@
   height: 100%;
 }
 
+@media(max-width: 767px) {
+  .video__video {
+    height: 60vw;
+  }
+}
+
 .footer__inner {
   position: relative;
   z-index: 2;
