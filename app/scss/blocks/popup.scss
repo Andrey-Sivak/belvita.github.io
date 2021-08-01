@@ -68,7 +68,6 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-  text-transform: uppercase;
   color: $green;
   margin: 0 auto 30px;
 }
@@ -124,4 +123,9 @@
 
   text-align: center;
   letter-spacing: -0.02em;
+
+  & a {
+    color: $green;
+    text-decoration: underline;
+  }
 }

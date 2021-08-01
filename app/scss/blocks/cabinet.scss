@@ -236,6 +236,12 @@
   display: block;
 
   margin: 0 auto;
+
+  &-wrap {
+    height: 237px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .cabinet__prizes__text {

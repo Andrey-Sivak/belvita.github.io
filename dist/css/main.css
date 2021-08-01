@@ -747,6 +747,16 @@ body {
   margin: 0 auto;
 }
 
+.cabinet__prizes__logo-wrap {
+  height: 237px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .cabinet__prizes__text {
   font-weight: bold;
   font-size: 16px;
@@ -2349,7 +2359,6 @@ span.error {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-  text-transform: uppercase;
   color: #155b11;
   margin: 0 auto 30px;
 }
@@ -2400,6 +2409,11 @@ span.error {
   margin-bottom: 20px;
   text-align: center;
   letter-spacing: -0.02em;
+}
+
+.popup__content__text a {
+  color: #155b11;
+  text-decoration: underline;
 }
 
 .product {
